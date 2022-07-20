@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75BB52CA288668BC00C498F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 75BB52C9288668BC00C498F8 /* main.c */; };
 		75BB52DE2886827F00C498F8 /* DLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 75BB52DD2886827F00C498F8 /* DLinkedList.c */; };
+		75BB52E128880F0100C498F8 /* CLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 75BB52E028880F0100C498F8 /* CLinkedList.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		75BB52C9288668BC00C498F8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		75BB52DC2886827F00C498F8 /* DLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLinkedList.h; sourceTree = "<group>"; };
 		75BB52DD2886827F00C498F8 /* DLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DLinkedList.c; sourceTree = "<group>"; };
+		75BB52DF28880F0100C498F8 /* CLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLinkedList.h; sourceTree = "<group>"; };
+		75BB52E028880F0100C498F8 /* CLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CLinkedList.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				75BB52C9288668BC00C498F8 /* main.c */,
 				75BB52DC2886827F00C498F8 /* DLinkedList.h */,
 				75BB52DD2886827F00C498F8 /* DLinkedList.c */,
+				75BB52DF28880F0100C498F8 /* CLinkedList.h */,
+				75BB52E028880F0100C498F8 /* CLinkedList.c */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75BB52CA288668BC00C498F8 /* main.c in Sources */,
+				75BB52E128880F0100C498F8 /* CLinkedList.c in Sources */,
 				75BB52DE2886827F00C498F8 /* DLinkedList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
