@@ -10,6 +10,7 @@
 		75BB52CA288668BC00C498F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 75BB52C9288668BC00C498F8 /* main.c */; };
 		75BB52DE2886827F00C498F8 /* DLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 75BB52DD2886827F00C498F8 /* DLinkedList.c */; };
 		75BB52E128880F0100C498F8 /* CLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 75BB52E028880F0100C498F8 /* CLinkedList.c */; };
+		75BB52E428883E4400C498F8 /* DBLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 75BB52E328883E4400C498F8 /* DBLinkedList.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		75BB52DD2886827F00C498F8 /* DLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DLinkedList.c; sourceTree = "<group>"; };
 		75BB52DF28880F0100C498F8 /* CLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLinkedList.h; sourceTree = "<group>"; };
 		75BB52E028880F0100C498F8 /* CLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CLinkedList.c; sourceTree = "<group>"; };
+		75BB52E228883E4400C498F8 /* DBLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLinkedList.h; sourceTree = "<group>"; };
+		75BB52E328883E4400C498F8 /* DBLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DBLinkedList.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				75BB52DD2886827F00C498F8 /* DLinkedList.c */,
 				75BB52DF28880F0100C498F8 /* CLinkedList.h */,
 				75BB52E028880F0100C498F8 /* CLinkedList.c */,
+				75BB52E228883E4400C498F8 /* DBLinkedList.h */,
+				75BB52E328883E4400C498F8 /* DBLinkedList.c */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BB52E428883E4400C498F8 /* DBLinkedList.c in Sources */,
 				75BB52CA288668BC00C498F8 /* main.c in Sources */,
 				75BB52E128880F0100C498F8 /* CLinkedList.c in Sources */,
 				75BB52DE2886827F00C498F8 /* DLinkedList.c in Sources */,
