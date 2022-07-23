@@ -6,10 +6,10 @@
 //
 
 #include <stdio.h>
-#include "CircularQueue.h"
+#include "ListBaseQueue.h"
 
 int main(int argc, const char * argv[]) {
-  Queue q;
+  LQueue q;
   QueueInit(&q);
   
   Enqueue(&q, 1);

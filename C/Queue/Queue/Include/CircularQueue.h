@@ -21,13 +21,11 @@ typedef struct _cQueue
   Data queArr[QUE_LEN];
 } CQueue;
 
-typedef CQueue Queue;
+void QueueInit(CQueue *pq);
+int QIsEmpty(CQueue *pq);
 
-void QueueInit(Queue *pq);
-int QIsEmpty(Queue *pq);
-
-void Enqueue(Queue *pq, Data data);
-Data Dequeue(Queue *pq);
-Data QPeek(Queue *pq);
+void Enqueue(CQueue *pq, Data data);
+Data Dequeue(CQueue *pq);
+Data QPeek(CQueue *pq);
 
 #endif /* CircularQueue_h */

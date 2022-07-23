@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75366277288AD13800210664 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 75366276288AD13800210664 /* main.c */; };
 		7536627F288ADFBA00210664 /* CircularQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 7536627E288ADFBA00210664 /* CircularQueue.c */; };
+		75366282288AF16A00210664 /* ListBaseQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 75366281288AF16A00210664 /* ListBaseQueue.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		75366276288AD13800210664 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7536627D288ADFBA00210664 /* CircularQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularQueue.h; sourceTree = "<group>"; };
 		7536627E288ADFBA00210664 /* CircularQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CircularQueue.c; sourceTree = "<group>"; };
+		75366280288AF16A00210664 /* ListBaseQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListBaseQueue.h; sourceTree = "<group>"; };
+		75366281288AF16A00210664 /* ListBaseQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListBaseQueue.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +63,29 @@
 		75366275288AD13800210664 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				75366276288AD13800210664 /* main.c */,
-				7536627D288ADFBA00210664 /* CircularQueue.h */,
-				7536627E288ADFBA00210664 /* CircularQueue.c */,
+				75366284288AFFA800210664 /* Source */,
+				75366283288AFF8700210664 /* Include */,
 			);
 			path = Queue;
+			sourceTree = "<group>";
+		};
+		75366283288AFF8700210664 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				7536627D288ADFBA00210664 /* CircularQueue.h */,
+				75366280288AF16A00210664 /* ListBaseQueue.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		75366284288AFFA800210664 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				75366276288AD13800210664 /* main.c */,
+				7536627E288ADFBA00210664 /* CircularQueue.c */,
+				75366281288AF16A00210664 /* ListBaseQueue.c */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75366282288AF16A00210664 /* ListBaseQueue.c in Sources */,
 				7536627F288ADFBA00210664 /* CircularQueue.c in Sources */,
 				75366277288AD13800210664 /* main.c in Sources */,
 			);

@@ -9,13 +9,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void QueueInit(Queue *pq)
+void QueueInit(CQueue *pq)
 {
   pq -> front = 0;
   pq -> rear = 0;
 }
 
-int QIsEmpty(Queue *pq)
+int QIsEmpty(CQueue *pq)
 {
   if(pq->front == pq->rear) { return TRUE; }
   else { return FALSE; }
@@ -27,7 +27,7 @@ int NextPosIdx(int pos)
   else { return pos + 1; }
 }
 
-void Enqueue(Queue *pq, Data data)
+void Enqueue(CQueue *pq, Data data)
 {
   if(NextPosIdx(pq->rear) == pq -> front) {
     printf("QUEUE IS MEMORY");
@@ -38,7 +38,7 @@ void Enqueue(Queue *pq, Data data)
   pq -> queArr[pq -> rear] = data;
 }
 
-Data Dequeue(Queue *pq)
+Data Dequeue(CQueue *pq)
 {
   if(QIsEmpty(pq)) {
     printf("QUEUE IS MEMORY");
@@ -49,7 +49,7 @@ Data Dequeue(Queue *pq)
   return pq -> queArr[pq -> front];
 }
 
-Data QPeek(Queue *pq)
+Data QPeek(CQueue *pq)
 {
   if(QIsEmpty(pq)) {
     printf("QUEUE IS MEMORY");
