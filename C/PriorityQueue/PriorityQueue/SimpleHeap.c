@@ -7,9 +7,10 @@
 
 #include "SimpleHeap.h"
 
-void HeapInit(Heap *ph)
+void HeapInit(Heap *ph, PriorityComp pc)
 {
   ph -> numOfData = 0;
+  ph -> comp = pc;
 }
 
 int HIsEmpty(Heap *ph)
@@ -40,8 +41,8 @@ int GetHighPriorChildIndex(Heap *ph, int idx)
   } else if(GetLeftChildIndex(idx) == ph -> numOfData) {
     return GetLeftChildIndex(idx);
   } else {
-    if(ph -> heapArr[GetLeftChildIndex(idx)].prior >
-       ph -> heapArr[GetRightChildIndex(idx)].prior) {
+    if(ph -> comp(ph ->heapArr[GetLeftChildIndex(idx)],
+                ph ->heapArr[GetRightChildIndex(idx)]) < 0) {
       return GetRightChildIndex(idx);
     } else {
       return GetLeftChildIndex(idx);
@@ -49,13 +50,12 @@ int GetHighPriorChildIndex(Heap *ph, int idx)
   }
 }
 
-void HInsert(Heap *ph, HData data, Priority prior)
+void HInsert(Heap *ph, HData data)
 {
   int idx = ph -> numOfData+1;
-  HeapElement newElement = {prior, data};
   
   while (idx != 1) {
-    if(prior < (ph -> heapArr[GetParentIndex(idx)].prior)) {
+    if(ph -> comp(data, ph -> heapArr[GetParentIndex(idx)]) > 0) {
       ph -> heapArr[idx] = ph -> heapArr[GetParentIndex(idx)];
       idx = GetParentIndex(idx);
     } else {
@@ -63,21 +63,21 @@ void HInsert(Heap *ph, HData data, Priority prior)
     }
   }
   
-  ph -> heapArr[idx] = newElement;
+  ph -> heapArr[idx] = data;
   ph -> numOfData += 1;
 }
 
 HData HDelete(Heap *ph)
 {
-  HData retData = (ph -> heapArr[1]).data;
-  HeapElement lastElement = ph -> heapArr[ph -> numOfData];
+  HData retData = ph -> heapArr[1];
+  HData lastElement = ph -> heapArr[ph -> numOfData];
   
   int parentIndex = 1;
   int childIndex;
   
   while (1) {
     childIndex = GetHighPriorChildIndex(ph, parentIndex);
-    if(lastElement.prior <= ph -> heapArr[childIndex].prior) {
+    if(ph -> comp(lastElement, ph -> heapArr[childIndex]) >= 0) {
       break;
     }
     
