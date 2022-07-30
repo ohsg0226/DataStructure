@@ -41,8 +41,8 @@ int GetHighPriorChildIndex(Heap *ph, int idx)
   } else if(GetLeftChildIndex(idx) == ph -> numOfData) {
     return GetLeftChildIndex(idx);
   } else {
-    if(ph -> comp(ph ->heapArr[GetLeftChildIndex(idx)],
-                ph ->heapArr[GetRightChildIndex(idx)]) < 0) {
+    if(ph->comp(ph->heapArr[GetLeftChildIndex(idx)],
+          ph->heapArr[GetRightChildIndex(idx)]) < 0) {
       return GetRightChildIndex(idx);
     } else {
       return GetLeftChildIndex(idx);

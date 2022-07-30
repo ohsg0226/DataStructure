@@ -14,7 +14,7 @@
 #define HEAP_LEN 100
 
 typedef char HData;
-typedef int (*PriorityComp)(HData d1, HData d2);
+typedef int PriorityComp(HData d1, HData d2);
 
 typedef struct _heap
 {
