@@ -42,12 +42,33 @@ void SelectSort(int arr[], int n)
     arr[maxIdx] = temp;
   }
 }
+
+void InsertSort(int arr[], int n)
+{
+  int i, j;
+  int insertData;
+  
+  for(i = 1; i<n; i++) {
+    insertData = arr[i];
+    for(j=i-1; j>=0; j--) {
+      if(arr[j] > insertData) {
+        arr[j+1] = arr[j];
+      } else {
+        break;
+      }
+      
+    }
+    arr[j+1] = insertData;
+  }
+}
+
 int main(int argc, const char * argv[]) {
   int arr[4] = {3,2,4,1};
   int i;
   
 //  BubbleSort(arr, sizeof(arr)/sizeof(int));
-  SelectSort(arr, sizeof(arr)/sizeof(int));
+//  SelectSort(arr, sizeof(arr)/sizeof(int));
+  InsertSort(arr, sizeof(arr)/sizeof(int));
   
   for(i=0;i<4;i++) {
     printf("%d", arr[i]);
