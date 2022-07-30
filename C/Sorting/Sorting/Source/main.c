@@ -7,6 +7,8 @@
 
 #include <stdio.h>
 #include "MergeSort.h"
+#include "QuickSort.h"
+
 void BubbleSort(int arr[], int n)
 {
   int i, j;
@@ -70,7 +72,8 @@ int main(int argc, const char * argv[]) {
 //  BubbleSort(arr, sizeof(arr)/sizeof(int));
 //  SelectSort(arr, sizeof(arr)/sizeof(int));
 //  InsertSort(arr, sizeof(arr)/sizeof(int));
-  MergeSort(arr, 0, sizeof(arr)/sizeof(int)-1);
+//  MergeSort(arr, 0, sizeof(arr)/sizeof(int)-1);
+  QuickSort(arr, 0, sizeof(arr)/sizeof(int)-1);
   
   for(i=0;i<4;i++) {
     printf("%d", arr[i]);

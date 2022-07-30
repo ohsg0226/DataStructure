@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75CE6A752895B44A00D6EF55 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 75CE6A742895B44A00D6EF55 /* main.c */; };
 		75CE6A7F2895B4D000D6EF55 /* MergeSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 75CE6A7E2895B4D000D6EF55 /* MergeSort.c */; };
+		75CE6A822895B7AB00D6EF55 /* QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 75CE6A812895B7AB00D6EF55 /* QuickSort.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		75CE6A742895B44A00D6EF55 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		75CE6A7D2895B4D000D6EF55 /* MergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 		75CE6A7E2895B4D000D6EF55 /* MergeSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MergeSort.c; sourceTree = "<group>"; };
+		75CE6A802895B7AB00D6EF55 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		75CE6A812895B7AB00D6EF55 /* QuickSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QuickSort.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 		75CE6A7B2895B48200D6EF55 /* Include */ = {
 			isa = PBXGroup;
 			children = (
+				75CE6A802895B7AB00D6EF55 /* QuickSort.h */,
 				75CE6A7D2895B4D000D6EF55 /* MergeSort.h */,
 			);
 			path = Include;
@@ -79,6 +83,7 @@
 			children = (
 				75CE6A7E2895B4D000D6EF55 /* MergeSort.c */,
 				75CE6A742895B44A00D6EF55 /* main.c */,
+				75CE6A812895B7AB00D6EF55 /* QuickSort.c */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CE6A7F2895B4D000D6EF55 /* MergeSort.c in Sources */,
+				75CE6A822895B7AB00D6EF55 /* QuickSort.c in Sources */,
 				75CE6A752895B44A00D6EF55 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
