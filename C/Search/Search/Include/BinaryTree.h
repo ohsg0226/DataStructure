@@ -35,4 +35,9 @@ void PreorderTraverse(BinaryTreeNode *bt, VisitFuncPtr action);
 void InorderTraverse(BinaryTreeNode *bt, VisitFuncPtr action);
 void PostorderTraverse(BinaryTreeNode *bt, VisitFuncPtr action);
 
+BinaryTreeNode *RemoveLeftSubTree(BinaryTreeNode *bt);
+BinaryTreeNode *RemoveRightSubTree(BinaryTreeNode *bt);
+
+void ChangeLeftSubTree(BinaryTreeNode *main, BinaryTreeNode *sub);
+void ChangeRightSubTree(BinaryTreeNode *main, BinaryTreeNode *sub);
 #endif /* BinaryTree_h */

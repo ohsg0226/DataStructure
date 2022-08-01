@@ -19,4 +19,7 @@ BinarySearchTreeData BSTGetNodeData(BinaryTreeNode *bst);
 void BSTInsert(BinaryTreeNode **pRoot, BinarySearchTreeData data);
 BinaryTreeNode *BSTSearch(BinaryTreeNode *bst, BinarySearchTreeData target);
 
+BinaryTreeNode *BSTRemove(BinaryTreeNode **pRoot, BinarySearchTreeData target);
+void BSTShowAll(BinaryTreeNode *bst);
+
 #endif /* BinarySearchTree_h */
