@@ -10,6 +10,8 @@
 		752A1CBF289A45F700FBD17B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CBE289A45F700FBD17B /* main.c */; };
 		752A1CC7289A4D9C00FBD17B /* ALGraph.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CC6289A4D9C00FBD17B /* ALGraph.c */; };
 		752A1CCC289A4DC300FBD17B /* DLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CCA289A4DC300FBD17B /* DLinkedList.c */; };
+		752A1CCF289A594B00FBD17B /* ALGraphDFS.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CCE289A594B00FBD17B /* ALGraphDFS.c */; };
+		752A1CD2289A5B7A00FBD17B /* ArrayBaseStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CD0289A5B7A00FBD17B /* ArrayBaseStack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		752A1CC6289A4D9C00FBD17B /* ALGraph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ALGraph.c; sourceTree = "<group>"; };
 		752A1CCA289A4DC300FBD17B /* DLinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DLinkedList.c; sourceTree = "<group>"; };
 		752A1CCB289A4DC300FBD17B /* DLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLinkedList.h; sourceTree = "<group>"; };
+		752A1CCD289A594B00FBD17B /* ALGraphDFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGraphDFS.h; sourceTree = "<group>"; };
+		752A1CCE289A594B00FBD17B /* ALGraphDFS.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ALGraphDFS.c; sourceTree = "<group>"; };
+		752A1CD0289A5B7A00FBD17B /* ArrayBaseStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ArrayBaseStack.c; sourceTree = "<group>"; };
+		752A1CD1289A5B7A00FBD17B /* ArrayBaseStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayBaseStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,10 @@
 		752A1CC8289A4DA400FBD17B /* Include */ = {
 			isa = PBXGroup;
 			children = (
+				752A1CCD289A594B00FBD17B /* ALGraphDFS.h */,
 				752A1CC5289A4D9C00FBD17B /* ALGraph.h */,
 				752A1CCB289A4DC300FBD17B /* DLinkedList.h */,
+				752A1CD1289A5B7A00FBD17B /* ArrayBaseStack.h */,
 			);
 			path = Include;
 			sourceTree = "<group>";
@@ -84,6 +92,8 @@
 				752A1CBE289A45F700FBD17B /* main.c */,
 				752A1CCA289A4DC300FBD17B /* DLinkedList.c */,
 				752A1CC6289A4D9C00FBD17B /* ALGraph.c */,
+				752A1CCE289A594B00FBD17B /* ALGraphDFS.c */,
+				752A1CD0289A5B7A00FBD17B /* ArrayBaseStack.c */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -145,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				752A1CD2289A5B7A00FBD17B /* ArrayBaseStack.c in Sources */,
 				752A1CCC289A4DC300FBD17B /* DLinkedList.c in Sources */,
+				752A1CCF289A594B00FBD17B /* ALGraphDFS.c in Sources */,
 				752A1CBF289A45F700FBD17B /* main.c in Sources */,
 				752A1CC7289A4D9C00FBD17B /* ALGraph.c in Sources */,
 			);
