@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		752A1CF5289BE3E200FBD17B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CF4289BE3E200FBD17B /* main.c */; };
 		752A1CFD289BE3EA00FBD17B /* ArrayList.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CFC289BE3EA00FBD17B /* ArrayList.c */; };
+		752A1D00289BEED100FBD17B /* NameCard.c in Sources */ = {isa = PBXBuildFile; fileRef = 752A1CFF289BEED100FBD17B /* NameCard.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		752A1CF4289BE3E200FBD17B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		752A1CFB289BE3EA00FBD17B /* ArrayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayList.h; sourceTree = "<group>"; };
 		752A1CFC289BE3EA00FBD17B /* ArrayList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ArrayList.c; sourceTree = "<group>"; };
+		752A1CFE289BEED100FBD17B /* NameCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameCard.h; sourceTree = "<group>"; };
+		752A1CFF289BEED100FBD17B /* NameCard.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = NameCard.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				752A1CF4289BE3E200FBD17B /* main.c */,
 				752A1CFC289BE3EA00FBD17B /* ArrayList.c */,
 				752A1CFB289BE3EA00FBD17B /* ArrayList.h */,
+				752A1CFE289BEED100FBD17B /* NameCard.h */,
+				752A1CFF289BEED100FBD17B /* NameCard.c */,
 			);
 			path = "Problem03-1";
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				752A1D00289BEED100FBD17B /* NameCard.c in Sources */,
 				752A1CF5289BE3E200FBD17B /* main.c in Sources */,
 				752A1CFD289BE3EA00FBD17B /* ArrayList.c in Sources */,
 			);
