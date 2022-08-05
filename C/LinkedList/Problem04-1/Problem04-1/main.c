@@ -23,6 +23,8 @@ int main(int argc, const char * argv[]) {
   Node *newNode = NULL;
   int readData;
   
+  head = (Node *)malloc(sizeof(Node));
+  
   while (1) {
     printf("자연수 입력 : ");
     scanf("%d ", &readData);
@@ -33,28 +35,19 @@ int main(int argc, const char * argv[]) {
     newNode -> data = readData;
     newNode -> next = NULL;
     
-    if(head==NULL) {
-      head = newNode;
-      tail = newNode;
-    } else {
-      newNode -> next = head;
-      head = newNode;
-    }
+    tail -> next = newNode;
+    tail = newNode;
   }
   printf("\n\n");
   printf("데이터 전체 출력 \n");
   
-  if(head == NULL) {
-    printf("No data");
-  } else {
-    cur = head;
-    
+  cur = head;
+  
+  while (cur -> next != NULL) {
+    cur = cur -> next;
     printf("%d ", cur -> data);
-    while (cur -> next != NULL) {
-      cur = cur -> next;
-      printf("%d ", cur -> data);
-    }
   }
+  
   
   printf("\n\n");
   
