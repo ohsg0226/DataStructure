@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		75E00E2B28A0D46B0095E269 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E00E2A28A0D46B0095E269 /* main.c */; };
 		75E00E3328A0D48A0095E269 /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E00E3228A0D48A0095E269 /* BinaryTree.c */; };
+		75E00E3628A0E7940095E269 /* ExpressionTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E00E3528A0E7940095E269 /* ExpressionTree.c */; };
+		75E00E3928A0E7DF0095E269 /* ListBaseStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E00E3828A0E7DF0095E269 /* ListBaseStack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		75E00E2A28A0D46B0095E269 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		75E00E3128A0D48A0095E269 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 		75E00E3228A0D48A0095E269 /* BinaryTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryTree.c; sourceTree = "<group>"; };
+		75E00E3428A0E7940095E269 /* ExpressionTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionTree.h; sourceTree = "<group>"; };
+		75E00E3528A0E7940095E269 /* ExpressionTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ExpressionTree.c; sourceTree = "<group>"; };
+		75E00E3728A0E7DF0095E269 /* ListBaseStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListBaseStack.h; sourceTree = "<group>"; };
+		75E00E3828A0E7DF0095E269 /* ListBaseStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ListBaseStack.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				75E00E2A28A0D46B0095E269 /* main.c */,
 				75E00E3128A0D48A0095E269 /* BinaryTree.h */,
 				75E00E3228A0D48A0095E269 /* BinaryTree.c */,
+				75E00E3428A0E7940095E269 /* ExpressionTree.h */,
+				75E00E3528A0E7940095E269 /* ExpressionTree.c */,
+				75E00E3828A0E7DF0095E269 /* ListBaseStack.c */,
+				75E00E3728A0E7DF0095E269 /* ListBaseStack.h */,
 			);
 			path = Problem;
 			sourceTree = "<group>";
@@ -124,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E00E3628A0E7940095E269 /* ExpressionTree.c in Sources */,
+				75E00E3928A0E7DF0095E269 /* ListBaseStack.c in Sources */,
 				75E00E3328A0D48A0095E269 /* BinaryTree.c in Sources */,
 				75E00E2B28A0D46B0095E269 /* main.c in Sources */,
 			);
