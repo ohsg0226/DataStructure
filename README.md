@@ -6,6 +6,5 @@
 [연결리스트](./C/LinkedList)
 
 ### 스택
-[스택](./C/Stack)
-
+[스택](./C/Stack). 
 [블로그 정리](https://medium.com/@ohsg0226/stack-3957a8ee4003)
