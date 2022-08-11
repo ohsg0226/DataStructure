@@ -8,3 +8,8 @@
 ### 스택
 [스택](./C/Stack)   
 [블로그 정리](https://medium.com/@ohsg0226/stack-3957a8ee4003)
+
+###큐  
+[큐](./C/Queue/Queuue)   
+[덱](./C/Queue/Deque/Deque)   
+[블로그 정리](https://medium.com/@ohsg0226/queue-8bb30e7b0ba4)
