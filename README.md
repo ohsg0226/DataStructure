@@ -13,3 +13,7 @@
 [큐](./C/Queue/Queuue)   
 [덱](./C/Queue/Deque/Deque)   
 [블로그 정리](https://medium.com/@ohsg0226/queue-8bb30e7b0ba4)
+
+### 트리
+[트리](./C/Tree/Tree)   
+[블로그 정리](https://medium.com/@ohsg0226/트리-41dfdf460949)
